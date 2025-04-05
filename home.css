@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --black: black ;
+    --purple: purple ;
+    --white: white ;
+    --light-color: #666;
+    --lightwhite: #f7f7f7 ;
+    --grey: grey ;
+    --lightblack: #3c3c3c ;
+    --lightpurple: #a6a6f7 ;
+    --lightgrey: lightgrey ;
+    --lightgrey: #d6d6d6 ;
+    --darkgrey: darkgrey ;
+    --lightblue: #a6f7f7 ;
+    --lightgreen: #a6f7a6 ;
+    --lightred: #f7a6a6 ;
+    --lightyellow: #f7f7a6 ;
+    --lightorange: #f7d6a6 ;
+    --lightpink: #f7a6d6 ;
+    --lightbrown: #f7d6d6 ;
+    --lightcyan: #a6f7f7 ;
+    --lightmagenta: #f7a6f7 ; 
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);   
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Andika', sans-serif;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: all .2s linear;
+    /*list-style: none;*/
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+body{
+    background: #fff;
+    /*background-image: url('pics/pills.png');
+    background-size: cover; to Adjusts the image to cover the entire background 
+    background-repeat: no-repeat; to Prevents the image from repeating 
+    background-position: center; to Centers the image 
+    font-size: 1.6rem;
+    background-color: var(--lightwhite);
+    color: var(--black);
+    overflow-x: hidden;*/
+}
+/*h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    color: var(--black);
+}*/
+/*header*/
+.header{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--lightgrey);
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    z-index: 1000;
+    background-color: var(--lightwhite);
+    box-shadow: var(--box-shadow);
+
+}
+
+.header .logo img{
+    width: 65%;
+    height: 95%;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;*/
+}
+ .header .navbar a:hover{
+    color: var(--lightwhite);
+    background: linear-gradient(120deg, #1313c2 35%, #1f1f27 100%);
+}
+
+.header .menubtn{
+    margin-right: 60px;
+}
+
+.header .menubtn button{
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--lightwhite);
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #00c6ff, #2600ff);
+}
+
+/*Main content*/
+
+.main{
+    width: 100%;
+    display: flex;
+}
+
+.main .left{
+    padding-left: 50px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.main .left h2{
+    padding-top: 46%;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--light-color);
+    margin-top: 100px;
+}
+
+.main .left h1{
+    font-size: 42px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.main .left p{
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: var(--light-color);
+}
+
+.main .left button{
+    padding-top: 12px;
+    padding: 15px 45px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid;
+    box-shadow: var(--box-shadow);
+    background-image: linear-gradient(to right, #649bff, #0019fa, #649bff);
+    border-radius: 10px;
+}
+
+.main .right img{
+    padding-top: 25%;
+    width: 130%;
+    height: 113%;
+    display: flex;
+    margin-left: 0;
+}

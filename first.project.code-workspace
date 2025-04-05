@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../html/first.project"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "pharmacie"
+	}
+}
