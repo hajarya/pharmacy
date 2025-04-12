@@ -10,142 +10,154 @@
     <link rel="stylesheet" href="login.css">
     <!--cloudflare library-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <!--Font Awesome 5.15.4 for proper icon rendering -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 <body>
-    <!--header-->
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="Pics/logo.png" alt="logo"> <!--width="125px" height="100px"-->
-        </a>
-        <!--nav bar-->
-        <nav class="navbar">
-            <a href="home.html">Home</a>                
-            <a href="about.html">About</a>
-            <a href="doctors.html">Doctors</a>
-            <a href="products.html">Products</a>
-            <a href="login.html">Login</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-
-        <div class="menubtn">
-            <button>Helpline</button>
-        </div>
-    </header>
-    <!--Login form-->
-    <!--Form_SignUp_SignIn-->
+  <div class="page-container">
+        <!--header-->
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="pics/logo.png" alt="logo"> <!--width="125px" height="100px"-->
+            </a>
+            <!--nav bar-->
+            <nav class="navbar">
+                <a href="home.html">Home</a>                
+                <a href="about.html">About</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="products.html">Products</a>
+                <a href="login.html">Login</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+    
+            <div class="menubtn">
+                <button>Helpline</button>
+            </div>
+        </header>
     <div class="container" id="container">
-    <!--Sign Up-->
+        <!-- Sign Up Form -->
         <div class="form sign-up-container">
             <form action="#">
                 <h1>Create An Account</h1>
-
-                <!--icons-->
                 <div class="social-container">
-                    <a href="#" class="social">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" class="social">
-                        <i class="fa fa-google-plus" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" class="social">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
+                    <a href="#" class="social"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin"></i></a>
                 </div>
-
                 <span>or use your email for registration</span>
-
-                <!--input fields-->
                 <div class="input-field">
                     <i class="fa fa-user"></i>
                     <input type="text" placeholder="Username" required>
                 </div>
-
                 <div class="input-field">
                     <i class="fa fa-envelope"></i>
                     <input type="email" placeholder="Email" required>
                 </div>
-
                 <div class="input-field">
                     <i class="fa fa-lock"></i>
                     <input type="password" placeholder="Password" required>
                 </div>
-
                 <button>Sign Up</button>
             </form>
         </div>
+
+        <!-- Sign In Form -->
+        <div class="form sign-in-container">
+            <form action="#">
+                <h1>Login</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fa fa-facebook-official"></i></a>
+                    <a href="#" class="social"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <span>or use your account</span>
+                <div class="input-field">
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Username/Email" required>
+                </div>
+                <div class="input-field">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+
+        <!-- Overlay -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <img src="pics/s1.png" style="height: 25rem; width: 30rem; padding-top: 5%;">
+                    <button class="btn" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <img src="pics/s3.png" style="height: 25rem; width: 30rem;">
+                    <button class="btn" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!--Sign In-->
-    <div class="form sign-in-container">
-        <form action="#">
-            <h1>Login</h1>
-
-            <!--icons-->
-            <div class="social-container">
-                <a href="#" class="social">
-                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                </a>
-                <a href="#" class="social">
-                    <i class="fa fa-google-plus" aria-hidden="true"></i>
-                </a>
-                <a href="#" class="social">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-            </div>
-
-            <span>or use your account</span>
-
-            <!--input fields-->
-            <div class="input-field">
-                <i class="fa fa-user"></i>
-                <input type="text/email" placeholder="Username/Email" required>
-            </div>
-
-
-            <div class="input-field">
-                <i class="fa fa-lock"></i>
-                <input type="password" placeholder="Password" required>
-            </div>
-
-            <a href="#">Forgot your password ?</a>
-            <button>Sign In</button>
-        </form>
-    </div>
-    <!--Overlay-->
-    <div class="overlay-container">
-        <div class="overlay">
-            <div class="overlay-panel overlay-left">
-                <h1>Welcome Back!</h1>
-                <p>To keep connected with us please login with your personal info</p>
-                <img src="pics/s1.png" style="height: 25rem; width: 30rem; padding-top: 5%;">
-                <button class="btn" id="signIn">Sign In</button>
-            </div>
-            <div class="overlay-panel overlay-right">
-                <h1>Hello, Friend!</h1>
-                <p>Enter your personal details and start journey with us</p>
-                <img src="Pics/s3.png" style="height: 25rem; width: 30rem;">
-                <button class="btn" id="signUp">Sign Up</button>
-            </div>
-        </div> 
-    </div>
-    <!--script for switching between sign up and sign in-->
-    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/js/fontawesome.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/js/all.min.js"></script-->
+  </div>
     <script>
         const signUpButton = document.getElementById('signUp');
         const signInButton = document.getElementById('signIn');
         const container = document.getElementById('container');
 
-        signUpButton.addEventListener('click',() =>{
+        signUpButton.addEventListener('click', () => {
             container.classList.add('right-panel-active');
         });
 
-        signInButton.addEventListener('click',() =>{
+        signInButton.addEventListener('click', () => {
             container.classList.remove('right-panel-active');
         });
     </script>
+
+
+     <!-- Footer -->
+     <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>Our Location</h2>
+                <div class="footer-content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Business Avenue<br>Cityville, ST 12345<br>Country</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h2>Contact Us</h2>
+                <div class="footer-content">
+                    <i class="fas fa-phone"></i>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="footer-content">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@MEDICURE_HEALTHCARE.com</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h2>About Us</h2>
+                <div class="footer-content">
+                    <i class="fas fa-briefcase"></i>
+                    <p>MEDICURE HEALTHCARE<br>Professional Services Since 20XX</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Your Company Name. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
 </body>
 </html>
