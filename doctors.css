@@ -3,6 +3,7 @@
 :root{
     --black: black ;
     --purple: purple ;
+    --dark-moderate-violet: #663399;
     --white: white ;
     --light-color: #666;
     --lightwhite: #f7f7f7 ;
@@ -21,9 +22,11 @@
     --lightbrown: #f7d6d6 ;
     --lightcyan: #a6f7f7 ;
     --lightmagenta: #f7a6f7 ; 
-    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);   
+    --box-shadow: 2px 2px 12px grey;   
+    --border: 2rem solid rgba(0, 0, .1);
 }
 *{
+    font-family: 'andika';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -40,14 +43,40 @@ html{
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
+
+}
+body{
+    background: #fff;
 }
 
-body{
-    background-color: #eee;
+
+
+/* Fix spacing between the header and the content */
+.top {
+    margin-top: 120px; /* Adjust this value to match the height of your header */
+}
+
+/* Style for the heading */
+.heading {
+    font-size: 2.5rem; /* Adjust the font size */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark gray color */
+    margin-bottom: 10px; /* Add spacing below the heading */
+    text-transform: uppercase; /* Make the text uppercase */
+}
+
+/* Style for the horizontal rule */
+.heading + hr {
+    border: none; /* Remove the default border */
+    height: 3px; /* Set the thickness of the line */
+    background-color: #00bfff; /* Set the color of the line */
+    width: 50%; /* Set the width of the line */
+    margin: 0 auto; /* Center the line */
+    margin-top: 10px; /* Add spacing above the line */
 }
 
 /*header*/
-
 .header{
     height: 100px;
     position: fixed;
@@ -68,7 +97,7 @@ body{
 
 .header .logo img{
     width: 65%;
-    height: 95%;
+    height: 100%;
     margin-top: 10px;
     display: inline-block;
 }
@@ -84,7 +113,7 @@ body{
     margin-left: 1rem;*/
 }
  .header .navbar a:hover{
-    color: var(--lightwhite);
+    color: #fff;
     background: linear-gradient(120deg, #1313c2 35%, #1f1f27 100%);
 }
 
@@ -96,11 +125,227 @@ body{
     padding: 10px 45px;
     text-align: center;
     font-size: 14px;
-    color: var(--lightwhite);
+    color: #fff;
     border: none;
     border-radius: 10px;
     background-image: linear-gradient(to right, #00c6ff, #2600ff);
 }
 
+.container.heading{
+    padding-top: 8%;
+    color: #5969C2;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.container hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-left: 30px;
+    border-style: inset;
+    border-width: 3px;
+}
+
+.top .box-container{
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.5rem;
+}
+
+.top .container .heading{
+    padding-top: 8%;
+    color: #5969C2;
+    text-align: center;
+    font-size: 2.5rem;
+}
 
 
+/* */
+.bottom .container .heading{
+    padding-top: 8%;
+    color: #5969C2;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.bottom .container hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-style: inset;
+    border-width: 3px;
+}
+/* */
+
+
+.top .box-container .box{
+    height: 100%;
+    width: 100%;
+    padding: 3rem 2rem;
+    background: #fff;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.top .box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+    width: 100%;
+}
+
+.top .box-container .box h1{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--dark-moderate-violet);
+}
+
+.top .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.btn{
+    border: 1px solid var(--black);
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover{
+    background: linear-gradient(120deg,#FAB2FF 40%,#663399);
+    color: #fff;
+}
+
+.bottom .box-container {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.5rem;
+
+}
+
+/* */
+.bottom .container .heading{
+    padding-top: 8%;
+    color: #5969C2;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.bottom .container hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-style: inset;
+    border-width: 3px;
+}
+/* */
+
+.bottom  .box-container .box{
+    height: 100%;
+    width: 100%;
+    padding: 3rem 2rem;
+    background: #fff;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.img-container{
+    height: 230px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 0px 0px 20px 20px;
+    display: inline-block;
+}
+
+.img-container img{
+    transform: skew(0deg, -13deg);
+    height: 250px;
+    width: 270px;
+    margin: -35px 0px 0px -70px;
+}
+
+.inner-skew{
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0px;
+    transform: skew(0deg, 13deg);
+    font-size: 0px;
+    margin: 20px 0px 0px 0px;
+    background: #c8c2c2;
+    height: 190px;
+    width: 200px;
+}
+
+.bottom,.box-container.box h1{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--dark-moderate-violet);
+}
+
+.bottom .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--light-color);
+    padding: 1rem 0;    
+}
+
+/* Footer */
+.site-footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 50px 20px;
+}
+    
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+    
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+    
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+    
+.footer-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+    
+.footer-content i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+    
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+    
+.social-links a {
+    color: #ecf0f1;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+    
+.social-links a:hover {
+    color: #12b3f3;
+}
